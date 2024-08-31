@@ -1,0 +1,136 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #aab396;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero section styling */
+.hero {
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Main content styling */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Container styling */
+.container {
+  background-color: #fff8e8;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container h2,
+.container h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Full-width container styling */
+.full-width {
+  width: 100%;
+  max-width: 100%; /* Ensures the container stretches fully across the screen */
+}
+
+/* List styling */
+ul,
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+ul li,
+ol li {
+  margin: 8px 0;
+  font-weight: 400;
+  color: #444;
+}
+
+/* Table styling */
+.table-wrapper {
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  table-layout: auto; /* Allows columns to auto size based on content */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-weight: 400;
+  word-wrap: break-word; /* Prevents long words from breaking the layout */
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+/* Image styling */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
